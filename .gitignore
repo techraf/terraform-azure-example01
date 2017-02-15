@@ -1,0 +1,22 @@
+#
+# after adding here a file that was already in git repository, run:
+#   git rm -r --cached file_or_dir
+#   per https://stackoverflow.com/questions/9750606/git-still-shows-files-as-modified-after-adding-to-gitignore
+#
+# PATTERNS
+#   **/file_to_ignore
+#   /dir/**/*.txt
+# EXCEPTIONS
+#   dir_to_exclude/*
+#   !dir_to_exclude/file_to_include
+#   !dir_to_exclude/dir_to_include/
+#
+**/.vagrant/**
+.DS_Store
+*.log
+*.pyc
+*.retry
+*.swp
+credentials.publishsettings
+terraform.tfstate
+terraform.tfstate.backup
