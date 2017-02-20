@@ -1,0 +1,7 @@
+---
+- hosts: terra01vm
+  gather_facts: no
+  tasks:
+    - name: Ensure timezone is set to JST
+      win_timezone:
+        timezone: "Tokyo Standard Time"
