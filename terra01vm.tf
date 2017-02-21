@@ -97,4 +97,9 @@ resource "azurerm_virtual_machine_extension" "test" {
         "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File ConfigureRemotingForAnsible.ps1"
     }
 SETTINGS
+
+    provisioner "local-exec" {
+        command = "ansible-playbook -i inventory playbook.yml"
+    }
+
 }
