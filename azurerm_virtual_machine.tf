@@ -1,6 +1,6 @@
 resource "azurerm_virtual_machine" "test" {
     name = "terra01vm"
-    location = "South Central US"
+    location = "${var.azure_resource_group_location}"
     resource_group_name = "${azurerm_resource_group.test.name}"
     network_interface_ids = ["${azurerm_network_interface.test.id}"]
     vm_size = "Standard_A1"

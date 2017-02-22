@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "test" {
-    name = "terra01rg"
-    location = "South Central US"
+    name = "${var.azure_resource_group_name}"
+    location = "${var.azure_resource_group_location}"
 }
