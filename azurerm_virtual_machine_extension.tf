@@ -17,7 +17,7 @@ resource "azurerm_virtual_machine_extension" "test" {
 SETTINGS
 
     provisioner "local-exec" {
-        command = "ansible-playbook -i inventory playbook.yml"
+        command = "cd ./ansible && ansible-playbook -i inventory playbook.yml"
     }
 
 }
