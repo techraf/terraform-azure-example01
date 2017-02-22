@@ -11,12 +11,9 @@
 #   !dir_to_exclude/file_to_include
 #   !dir_to_exclude/dir_to_include/
 #
-**/.vagrant/**
 .DS_Store
 *.log
-*.pyc
 *.retry
 *.swp
-credentials.publishsettings
 terraform.tfstate
 terraform.tfstate.backup
