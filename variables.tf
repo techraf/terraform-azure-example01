@@ -7,3 +7,13 @@ variable "azure_resource_group_location" {
     description = "Resource Group Location"
     default = "South Central US"
 }
+
+variable "azurerm_virtual_machine_size" {
+    description = "VM Size"
+    default = "Standard_A1"
+}
+
+variable "azurerm_virtual_machine_name" {
+    description = "VM Name"
+    default = "terra01vm"
+}
