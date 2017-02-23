@@ -1,6 +1,9 @@
 variable "azure_resource_group_name" { default = "terra01rg" }
 variable "azure_resource_group_location" { default = "South Central US" }
 
+variable "azurerm_storage_account_name" { default = "terra01sg00001" }
+variable "azurerm_storage_account_account_type" { default = "Standard_LRS" }
+
 variable "azurerm_virtual_machine_size" { default = "Standard_A1" }
 variable "azurerm_virtual_machine_name" { default = "terra01vm" }
 
