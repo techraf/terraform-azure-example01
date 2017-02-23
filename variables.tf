@@ -31,3 +31,5 @@ variable "azurerm_virtual_machine_storage_image_reference_version" { default = "
 # variable "azurerm_virtual_machine_os_profile_computer_name" { default = "${var.azurerm_virtual_machine_name}" }
 variable "azurerm_virtual_machine_os_profile_admin_username" { default = "terrastrator" }
 variable "azurerm_virtual_machine_os_profile_admin_password" { default = "UNSAFE**123!`#$%&**UNSAFE" }
+
+variable "enabled_ip_address" {}
