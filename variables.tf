@@ -14,3 +14,5 @@ variable "azurerm_network_interface_ip_configuration_private_ip_address_allocati
 variable "azurerm_public_ip_name" { default = "acceptanceTestPublicIp1" }
 variable "azurerm_public_ip_public_ip_address_allocation" { default = "dynamic" }
 variable "azurerm_public_ip_domain_name_label" { default = "terra01vm" }
+
+variable "azurerm_virtual_network_name" { default = "terra01vn" }
