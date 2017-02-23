@@ -22,3 +22,4 @@ variable "azurerm_public_ip_public_ip_address_allocation" { default = "dynamic" 
 variable "azurerm_public_ip_domain_name_label" { default = "terra01vm" }
 
 variable "azurerm_virtual_network_name" { default = "terra01vn" }
+variable "azurerm_virtual_network_address_space" { default = ["10.0.0.0/16"] }
