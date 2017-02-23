@@ -6,10 +6,10 @@ resource "azurerm_virtual_machine" "test" {
     vm_size = "${var.azurerm_virtual_machine_size}"
 
     storage_image_reference {
-        publisher = "MicrosoftWindowsServer"
-        offer = "WindowsServer"
-        sku = "2016-Datacenter"
-        version = "latest"
+        publisher = "${var.azurerm_virtual_machine_storage_image_reference_publisher}"
+        offer = "${var.azurerm_virtual_machine_storage_image_reference_offer}"
+        sku = "${var.azurerm_virtual_machine_storage_image_reference_sku}"
+        version = "${var.azurerm_virtual_machine_storage_image_reference_version}"
     }
 
     storage_os_disk {
@@ -21,7 +21,7 @@ resource "azurerm_virtual_machine" "test" {
 
     os_profile {
         computer_name = "${var.azurerm_virtual_machine_name}"
-        admin_username = "terrastrator"
-        admin_password = "UNSAFE**123!`#$%&**UNSAFE"
+        admin_username = "${var.azurerm_virtual_machine_os_profile_admin_username}"
+        admin_password = "${var.azurerm_virtual_machine_os_profile_admin_password}"
     }
 }
