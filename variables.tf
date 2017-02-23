@@ -1,7 +1,8 @@
 variable "azure_resource_group_name" { default = "terra01rg" }
 variable "azure_resource_group_location" { default = "South Central US" }
 
-variable "azurerm_storage_account_name" { default = "terra01sg00001" }
+# Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.
+variable "azurerm_storage_account_name_constant_part" { default = "terra01sg" }
 variable "azurerm_storage_account_account_type" { default = "Standard_LRS" }
 
 variable "azurerm_storage_container_name" { default = "vhds" }
