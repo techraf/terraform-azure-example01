@@ -17,3 +17,5 @@ variable "azurerm_virtual_machine_name" {
     description = "VM Name"
     default = "terra01vm"
 }
+
+variable "enabled_ip_address" {}
