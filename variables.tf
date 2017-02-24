@@ -32,4 +32,4 @@ variable "azurerm_virtual_machine_storage_image_reference_version" { default = "
 variable "azurerm_virtual_machine_os_profile_admin_username" { default = "terrastrator" }
 variable "azurerm_virtual_machine_os_profile_admin_password" { default = "UNSAFE**123!`#$%&**UNSAFE" }
 
-variable "security_rule_enabled_ip_address" { description = "Use TF_VAR_enabled_ip_address=192.168.1.1 syntax" }
+variable "security_rule_enabled_ip_address" { description = "Or define with `export TF_VAR_security_rule_enabled_ip_address=192.168.1.1`" }
