@@ -1,8 +1,8 @@
-resource "azurerm_virtual_machine_extension" "test" {
+resource "azurerm_virtual_machine_extension" "example01" {
     name = "WinRM"
     location = "${var.azure_resource_group_location}"
-    resource_group_name = "${azurerm_resource_group.test.name}"
-    virtual_machine_name = "${azurerm_virtual_machine.test.name}"
+    resource_group_name = "${azurerm_resource_group.example01.name}"
+    virtual_machine_name = "${azurerm_virtual_machine.example01.name}"
     publisher = "Microsoft.Compute"
     type = "CustomScriptExtension"
     type_handler_version = "1.8"
