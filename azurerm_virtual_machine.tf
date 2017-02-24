@@ -24,4 +24,9 @@ resource "azurerm_virtual_machine" "example01" {
         admin_username = "${var.azurerm_virtual_machine_os_profile_admin_username}"
         admin_password = "${var.azurerm_virtual_machine_os_profile_admin_password}"
     }
+
+    os_profile_windows_config {
+        provision_vm_agent = true
+        enable_automatic_upgrades = true
+    }
 }
