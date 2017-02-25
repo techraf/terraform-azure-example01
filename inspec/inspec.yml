@@ -1,0 +1,14 @@
+name: terraform-azure-example01-profile
+title: windows profile
+maintainer: techraf
+copyright: techraf
+license: Apache 2 license
+summary: Test-suite for Windows machine
+version: 0.0.1
+supports:
+  - os-family: windows
+depends:
+  - name: windows-baseline
+    git: https://github.com/dev-sec/windows-baseline
+  - name: windows-patch-baseline
+    git: https://github.com/dev-sec/windows-patch-baseline

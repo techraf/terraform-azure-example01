@@ -1,0 +1,13 @@
+---
+lockfile_version: 1
+depends:
+- name: windows-baseline
+  resolved_source:
+    git: https://github.com/dev-sec/windows-baseline
+    ref: ee16ce91a3dd12edcbd682c6ba41fb2e5382175d
+  version_constraints: ">= 0"
+- name: windows-patch-baseline
+  resolved_source:
+    git: https://github.com/dev-sec/windows-patch-baseline
+    ref: c183d08eb25638e7f5eac97e521640ea314c8e3d
+  version_constraints: ">= 0"
